@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FirstClass from './component/firstClass'
+import SimpleCalc from './component/simpleCalc';
+import FirstClass from './component/firstClass';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FirstClass />
+    <SimpleCalc />
   </React.StrictMode>,
   document.getElementById('root')
 );
