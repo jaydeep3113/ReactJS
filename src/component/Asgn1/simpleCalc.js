@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../style/style.css'
+import '../../style/style.css'
 export default class SimpleCalc extends Component{
  constructor(props){
      super(props)

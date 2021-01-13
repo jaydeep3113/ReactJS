@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SimpleCalc from './component/simpleCalc';
+import SimpleCalc from './component/Asgn1/simpleCalc';
 import FirstClass from './component/firstClass';
 import SecondClass from './component/secondClass';
-import Calc1 from './component/calc1';
+import Calc1 from './component/Asgn2/calc1';
 
 import reportWebVitals from './reportWebVitals';
 

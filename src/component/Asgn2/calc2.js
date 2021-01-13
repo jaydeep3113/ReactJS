@@ -5,30 +5,21 @@ export default class Calc2 extends React.Component{
         super(props);
 
         this.state = {
-            valuea: this.props.vala,
-            valueb: this.props.valb,
-            valuec: this.props.valc
+            result: this.props.valc
         }
-    }
-
-    handleB = (e) => {
-        console.log(e);
-        this.setState({
-            b: e.target.value
-        })
     }
 
     add = () => {
 
         this.setState({
-            valuec: parseInt(this.state.valuea)+parseInt(this.state.valueb)
+            result: parseInt(this.props.vala)+parseInt(this.props.valb)
         })
     }
 
     sub = () => {
 
         this.setState({
-            valuec: parseInt(this.state.valuea)-parseInt(this.state.valueb)
+            result: parseInt(this.props.vala)-parseInt(this.props.valb)
         })
     }
 
@@ -36,21 +27,21 @@ export default class Calc2 extends React.Component{
     mul = () => {
 
         this.setState({
-            valuec: parseInt(this.state.valuea)*parseInt(this.state.valueb)
+            result: parseInt(this.props.vala)*parseInt(this.props.valb)
         })
     }
 
     div = () => {
         
         this.setState({
-            valuec: parseInt(this.state.valuea)/parseInt(this.state.valueb)
+            result: parseInt(this.props.vala)/parseInt(this.props.valb)
         })
     }
 
     mod = () => {
 
         this.setState({
-            valuec: parseInt(this.state.valuea)%parseInt(this.state.valueb)
+            result: parseInt(this.props.vala)%parseInt(this.props.valb)
         })
     }
 
@@ -63,7 +54,7 @@ export default class Calc2 extends React.Component{
                 <button onClick={this.mul}>*</button>
                 <button onClick={this.div}>/</button>
                 <button onClick={this.mod}>%</button>
-                Result : {this.state.valuec}
+                Result : {this.state.result}
                
             </div>
         )

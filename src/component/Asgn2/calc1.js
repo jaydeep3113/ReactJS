@@ -6,9 +6,9 @@ export default class Calc1 extends React.Component{
         super(props);
 
         this.state = {
-            a: '',
-            b: '',
-            c: ''
+            a: 0,
+            b: 0,
+            c: 0
         }
     }
 
@@ -40,20 +40,22 @@ export default class Calc1 extends React.Component{
                 <input
                     name="num1input"
                     value={this.state.a}
-                    onChange={this.handleA} 
+                    onChange={this.handleA}
+                    //size='5'
                 />
 
                 <input
                     name="num2input"
                     value={this.state.b}
-                    onChange={this.handleB} 
+                    onChange={this.handleB}
+                    //size='5'
                 />
 
                 <Calc2 
                     vala={this.state.a}
                     valb={this.state.b}
-                    valc={this.state.c}
-                    myfunc={this.handleC}
+                    //valc={this.state.c}
+                    //myfunc={this.handleC}
                 />
                
             </div>
