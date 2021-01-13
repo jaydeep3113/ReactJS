@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SimpleCalc from './component/simpleCalc';
 import FirstClass from './component/firstClass';
+import SecondClass from './component/secondClass';
+import Calc1 from './component/calc1';
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SimpleCalc />
+    <Calc1/>
   </React.StrictMode>,
   document.getElementById('root')
 );
